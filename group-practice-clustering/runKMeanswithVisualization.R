@@ -27,9 +27,7 @@ runKMeanswithVisualization <- function(measurescores, max_iters=10) {
   init_c1 <- cbind(Zscores$scores[centroidindex1,1],Zscores$scores[centroidindex1,2]);
   init_c2 <- cbind(Zscores$scores[centroidindex2,1],Zscores$scores[centroidindex2,2]);
   init_c3 <- cbind(Zscores$scores[centroidindex3,1],Zscores$scores[centroidindex3,2]);
-  #init_c1 <- cbind(Zscores$scores[2,1],Zscores$scores[2,2]);
-  #init_c2 <- cbind(Zscores$scores[79,1],Zscores$scores[79,2]);
-  #init_c3 <- cbind(Zscores$scores[621,1],Zscores$scores[621,2]);
+  
   centroids <- rbind(init_c1, init_c2, init_c3);
   
   par(oma = c(1.5,1.5,3,.25));
